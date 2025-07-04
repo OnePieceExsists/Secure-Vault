@@ -19,24 +19,20 @@ Then follow these steps in your terminal:
 
 bash
 # 1. Clone the repository
-git clone <YOUR_GIT_URL>
+git clone OnePieceExsists/code-safe-keys#
 
 # 2. Move into your project directory
-cd CODE-SAFE-KEYS
+cd code-safe-keys
 
 # 3. Install dependencies
 npm install
 
 # 4. Start the development server
 npm run dev
-Open your browser to the URL displayed (usually http://localhost:5173) to start using the app.
+Open your browser to the URL displayed  to start using the app.
 
 🧑‍💻 Editing Options
-👉 With Lovable
-Changes made via the Lovable editor are automatically committed to this repo.
-
-👉 In Your Own IDE
-Clone the repo, make changes locally, and push them to update your project (Lovable will reflect them too).
+Clone the repo, make changes locally, and push them to update your project.
 
 👉 Using GitHub Codespaces
 Click the green Code button > Codespaces tab > New codespace.
