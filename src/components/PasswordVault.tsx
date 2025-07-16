@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -74,6 +75,22 @@ const PasswordVault = () => {
     notes: "",
   });
 
+  useEffect(() => {
+    const stored = localStorage.getItem("passwords");
+    if (stored) {
+      const parsed = JSON.parse(stored).map((entry: any) => ({
+        ...entry,
+        createdAt: new Date(entry.createdAt),
+        lastUpdated: new Date(entry.lastUpdated),
+      }));
+      setPasswords(parsed);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("passwords", JSON.stringify(passwords));
+  }, [passwords]);
+  
   const categories = ["Personal", "Work", "Development", "Entertainment", "Shopping", "Finance"];
   
   const getCategoryIcon = (category: string) => {
