@@ -52,4 +52,4 @@ Styling: Tailwind CSS
 https://secure-vault-nz3p.onrender.com/
 
 # Preview GUI image:
-![screenshot](public\SecureVault_screen.png)
+![screenshot](public/SecureVault_screen.png)
