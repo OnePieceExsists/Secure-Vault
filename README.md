@@ -47,3 +47,9 @@ Build Tool: Vite
 UI Components: shadcn-ui
 
 Styling: Tailwind CSS
+
+# To check the live version on Render just follow up the link:
+https://secure-vault-nz3p.onrender.com/
+
+# Preview GUI image:
+![screenshot](public\SecureVault_screen.png)
